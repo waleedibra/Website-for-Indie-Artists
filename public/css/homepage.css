@@ -1,0 +1,562 @@
+@font-face {
+  font-family: mainfont;
+  src: url('/fonts/Revamped-X3q1a.ttf');
+}
+
+
+@media all and (min-width: 320px) and (max-width: 373px) {
+  h1, h2, h3, p {
+    position: relative;
+    color: white;
+  }
+
+  * {
+    text-align: center;
+  }
+
+  .background {
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+
+
+
+  .navbar {}
+
+  .banner2 {
+    position: relative;
+    top: 25%;
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+  }
+
+  .latestalbum {
+    background-image: url('/images/Fromtheash.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    left: 19%;
+    text-align: center;
+    box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.3);
+
+    transform: rotateX(90deg);
+    animation: album-reveal 0.5s forwards 7s;
+
+  }
+
+  @keyframes album-reveal {
+    0% {
+      transform: rotateX(90deg);
+    }
+
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  .albumtitle {
+    font-family: mainfont;
+    font-size: 20px;
+    position: relative;
+    animation: text-fly 0.1s forwards 5s;
+    right: 100%;
+  }
+
+  .extratext {
+    font-family: mainfont;
+    font-size: 8px;
+    animation: text-fly 0.1s forwards 5.5s;
+    right: 100%;
+  }
+
+  @keyframes text-fly {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .calltoaction {
+    position: relative;
+    font-family: mainfont;
+    font-size: 14px;
+    top: 150px
+  }
+
+  .calltoaction:focus {
+    background-color: black;
+    color:  white;
+    outline: none;
+  }
+}
+@media all and (min-width: 374px) and (max-width: 424px) {
+  h1, h2, h3, p {
+    position: relative;
+    color: white;
+  }
+
+  * {
+    text-align: center;
+  }
+
+  .background {
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+
+
+
+  .navbar {}
+
+  .banner2 {
+    position: relative;
+    top: 25%;
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+  }
+
+  .latestalbum {
+    background-image: url('/images/Fromtheash.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    left: 22%;
+    text-align: center;
+    box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.3);
+    transform: rotateX(90deg);
+    animation: album-reveal 0.5s forwards 7s;
+  }
+
+  @keyframes album-reveal {
+    0% {
+      transform: rotateX(90deg);
+    }
+
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  .albumtitle {
+    font-family: mainfont;
+    font-size: 20px;
+    position: relative;
+    animation: text-fly 0.1s forwards 5s;
+    right: 100%;
+  }
+
+  .extratext {
+    font-family: mainfont;
+    font-size: 8px;
+    animation: text-fly 0.1s forwards 5.5s;
+    right: 100%;
+  }
+
+  @keyframes text-fly {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .calltoaction {
+    position: relative;
+    font-family: mainfont;
+    font-size: 14px;
+    top: 150px
+  }
+  .calltoaction:focus {
+    background-color: black;
+    color:  white;
+    outline: none;
+  }
+
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+  h1, h2, h3, p {
+    position: relative;
+    color: white;
+  }
+
+  * {
+    text-align: center;
+  }
+
+  .background{
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+  }
+
+
+
+
+  .navbar {}
+
+  .banner2 {
+    position: relative;
+    top: 25%;
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+
+  }
+
+
+
+  .latestalbum {
+    background-image: url('/images/Fromtheash.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    width: 220px;
+    left: 23%;
+    text-align: center;
+    box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.3);
+    transform: rotateX(90deg);
+    animation: album-reveal 0.5s forwards 7s;
+  }
+
+  @keyframes album-reveal {
+    0% {
+      transform: rotateX(90deg);
+    }
+
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  .albumtitle {
+    font-family: mainfont;
+    font-size: 24px;
+    position: relative;
+    animation: text-fly 0.1s forwards 5s;
+    right: 100%;
+  }
+
+  .extratext {
+    font-family: mainfont;
+    font-size: 10px;
+    animation: text-fly 0.1s forwards 5.5s;
+    right: 100%;
+  }
+
+  @keyframes text-fly {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .calltoaction {
+    position: relative;
+    font-family: mainfont;
+    font-size: 14px;
+    top: 150px
+  }
+  .calltoaction:focus {
+    background-color: black;
+    color:  white;
+    outline: none;
+  }
+
+
+
+
+
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  h1, h2, h3, p {
+    position: relative;
+    color: white;
+  }
+
+  * {
+    text-align: center;
+  }
+
+  .background {
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+  }
+
+
+
+
+  .navbar {}
+
+  .banner2 {
+    position: relative;
+    top: 25%;
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+
+  .latestalbum {
+    background-image: url('/images/Fromtheash.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    left: 35%;
+    text-align: center;
+    box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.3);
+
+    transform: rotateX(90deg);
+    animation: album-reveal 0.5s forwards 7s;
+  }
+
+  @keyframes album-reveal {
+    0% {
+      transform: rotateX(90deg);
+    }
+
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  .albumtitle {
+    font-family: mainfont;
+    font-size: 28px;
+    position: relative;
+    animation: text-fly 0.1s forwards 5s;
+    right: 100%;
+  }
+
+  .extratext {
+    font-family: mainfont;
+    font-size: 12px;
+    animation: text-fly 0.1s forwards 5.5s;
+    right: 100%;
+  }
+
+  @keyframes text-fly {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .calltoaction {
+    position: relative;
+    font-family: mainfont;
+    font-size: 14px;
+    top: 200px
+  }
+  .calltoaction:focus {
+    background-color: black;
+    color:  white;
+    outline: none;
+  }
+
+
+
+
+
+}
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  h1, h2, h3, p {
+    position: relative;
+    color: white;
+  }
+
+  * {
+    text-align: center;
+  }
+
+  .background {
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1100px;
+  }
+
+
+  .navbar {}
+
+  .banner2 {
+    position: relative;
+    top: 25%;
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+  }
+
+  .latestalbum {
+    background-image: url('/images/Fromtheash.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    left: 35%;
+    text-align: center;
+    box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.3);
+
+    transform: rotateX(90deg);
+    animation: album-reveal 0.5s forwards 7s;
+  }
+
+  @keyframes album-reveal {
+    0% {
+      transform: rotateX(90deg);
+    }
+
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  .albumtitle {
+    font-family: mainfont;
+    font-size: 32px;
+    position: relative;
+    animation: text-fly 0.1s forwards 5s;
+    right: 100%;
+  }
+
+  .extratext {
+    font-family: mainfont;
+    font-size: 16px;
+    animation: text-fly 0.1s forwards 5.5s;
+    right: 100%;
+  }
+
+  @keyframes text-fly {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .calltoaction {
+    position: relative;
+    font-family: mainfont;
+    font-size: 16px;
+    top: 250px
+  }
+  .calltoaction:focus {
+    background-color: black;
+    color:  white;
+    outline: none;
+  }
+
+
+
+
+
+}
+@media all and (min-width: 1440px) and (max-width: 2560px) {
+  h1, h2, h3, p {
+    position: relative;
+    color: white;
+  }
+
+  * {
+    text-align: center;
+  }
+
+  .background {
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+  }
+
+
+  .navbar {}
+
+  .banner2 {
+    position: relative;
+    top: 25%;
+    background-image: linear-gradient(145deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url('/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+
+
+  }
+
+  .latestalbum {
+    background-image: url('/images/Fromtheash.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    left: 40%;
+    top: 25px;
+    text-align: center;
+    box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.3);
+
+    transform: rotateX(90deg);
+    animation: album-reveal 0.5s forwards 7s;
+  }
+
+  @keyframes album-reveal {
+    0% {
+      transform: rotateX(90deg);
+    }
+
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  .albumtitle {
+    font-family: mainfont;
+    font-size: 32px;
+    position: relative;
+    animation: text-fly 0.1s forwards 5s;
+    right: 100%;
+  }
+
+  .extratext {
+    font-family: mainfont;
+    font-size: 16px;
+    animation: text-fly 0.1s forwards 5.5s;
+    right: 100%;
+  }
+
+  @keyframes text-fly {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .calltoaction {
+    position: relative;
+    font-family: mainfont;
+    font-size: 20px;
+    top: 200px
+  }
+  .calltoaction:focus {
+    background-color: black;
+    color:  white;
+    outline: none;
+  }
+
+
+
+
+
+}

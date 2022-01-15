@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/fanmail.css">
+
+    <title>Fan Mail</title>
+  </head>
+  <body>
+    <div class="background-image">
+      <%- include('partials/banner'); -%>
+
+
+    <form class="message-box" action="https://formsubmit.co/your@email.com" method="post">
+      <input class="name" type="text" name="" value="" placeholder="Please enter your name">
+      <br>
+      <br>
+      <textarea class="message" name="name" rows="8" cols="80" placeholder="write your message"></textarea>
+      <br>
+      <br>
+      <button class="submit" type="submit" name="button">submit</button>
+    </form>
+
+      </div>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/musicpage.css" />
+  <title>Music</title>
+
+</head>
+
+<body>
+
+  <div class="background-image">
+    <div class="banner">
+      <img src="images/logoicon.png" class="icon" alt="">
+
+      <h1 class="title">Solomon The Suvivor</h1>
+      <div class="tabs">
+        <span class="tab1"><a href="#" tabindex="1">Music</a></span>
+        <span class="tab2"><a href="#" tabindex="1">8D-Audio</a></span>
+        <span class="tab3"><a href="#" tabindex="1">About</a></span>
+        <span class="tab3"><a href="#" tabindex="1">Fanmail</a></span>
+
+      </div>
+    </div>
+
+    <h1 class="albumtitle">From the Ash</h1>
+    <div class="music-player">
+      <div class="Music-container">
+        <div class="Music-info">
+          <h4 id="title">unravel</h4>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div>
+
+
+        <audio src="songs/Unravel.mp3" id="audio"></audio>
+
+        <div class="img-container">
+          <img src="images/Fromtheash.jpg" alt="Music cover" id="cover">
+        </div>
+
+        <div class="navigation">
+          <button id="prev" class="action-btn" type="button" name="button">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn" type="button" name="button">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="action-btn" type="button" name="button">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="download" onclick="window.location.href='#emailsect'" type="submit" name="button">Download</button>
+
+
+  </div>
+
+  <div class="email-signup" id="emailsect">
+    <div class="email-sect">
+
+      <form class="" action="/music" method="POST">
+        <h1 class="emailtitle">Become a Survivor</h1>
+        <br>
+        <h3 class="salepitch">Join the Survivors email list to download the full album,and get
+          <br>
+          early updates on new music,exclusive snippets of unreleased material
+          <br>
+          and more
+
+        </h3>
+
+        <input type="text" name="fname" value="" class="form-control" placeholder="Please enter your first name" >
+        <br>
+        <input type="text" name="lname" value="" class="form-control" placeholder="Please enter your last name" >
+        <br>
+        <input name='email' type="email" id="inputEmail" class="form-control" placeholder="Email address"
+        <br>
+        <button class="submitbtn" type="submit" name="button">submit</button>
+      </form>
+
+    </div>
+  </div>
+
+
+
+
+</body>
+
+<script src="js/musicpage.js">
+
+</script>
+
+</html>
