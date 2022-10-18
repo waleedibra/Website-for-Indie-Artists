@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: secfont;
-  src: url('/fonts/Brave81.ttf');
+  src: url('/public/fonts/Brave81.ttf');
 }
 
 body {
@@ -86,7 +86,11 @@ body {
   .message {
     position: relative;
     text-align: center;
-    font-size: 32px;
+    font-size: 1rem;
+    line-height: 20px;
+
+    padding: 30px;
+
 
     top: 35vh;
     color: white;
@@ -168,7 +172,11 @@ body {
   .message {
     position: relative;
     text-align: center;
-    font-size: 32px;
+    font-size: 1rem;
+    line-height: 20px;
+
+    padding: 30px;
+
 
     top: 35vh;
     color: white;
@@ -250,7 +258,11 @@ body {
   .message {
     position: relative;
     text-align: center;
-    font-size: 32px;
+    font-size: 1rem;
+    line-height: 20px;
+
+    padding: 30px;
+
 
     top: 35vh;
     color: white;
@@ -332,8 +344,9 @@ body {
   .message {
     position: relative;
     text-align: center;
-    font-size: 32px;
-
+    font-size: 1rem;
+    line-height: 20px;
+    padding: 30px;
     top: 35vh;
     color: white;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);

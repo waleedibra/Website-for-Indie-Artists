@@ -2,15 +2,15 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const https = require('https')
 const request = require('request')
-
 const session = require('express-session');
 const flash = require('connect-flash');
-
 const app = express()
+
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({
   extended: true
 }))
+
 app.use(express.static(__dirname + '/public/'));
 app.use(session({
   secret: 'secret',
@@ -40,18 +40,15 @@ app.get('/fanmail', function(req, res) {
 })
 
 app.get('/8Daudio', function(req, res) {
-  res.render('8daudio');
+  const userName = req.flash('user')
+  res.render('8Daudio', {
+    userName
+  });
 })
 
 app.get('/about', function(req, res) {
   res.render('about');
 })
-
-
-
-
-
-
 
 //post req
 
@@ -65,10 +62,7 @@ app.post('/music', function(req, res) {
     // res.sendFile(__dirname + '/failure2.html')
     req.flash('user', 'Error please enter email with ".com"')
     res.redirect('/music')
-
-
   }
-
   const data = {
     members: [{
       email_address: eMail,
@@ -86,7 +80,6 @@ app.post('/music', function(req, res) {
     method: 'POST',
     auth: 'solomon:432bcb0969d56b3fcac375193a094945-us5'
   }
-
 
   const request = https.request(url, options, function(resp) {
     if (resp.statusCode === 200) {
@@ -110,7 +103,6 @@ app.post('/music', function(req, res) {
 
 
 })
-
 
 
 app.listen(7000, function(req, res) {

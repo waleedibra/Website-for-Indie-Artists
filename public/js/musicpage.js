@@ -1,4 +1,5 @@
 
+// from the ash mp3 player
 const musicContainer = document.querySelector('.Music-container')
 const playBtn = document.querySelector('#play')
 const prevBtn = document.querySelector('#prev')
@@ -10,26 +11,28 @@ const title = document.querySelector('#title')
 const cover = document.querySelector('#cover')
 
 
-
-
-
-
 // song titles array
-const songs = ['Fate', 'Inferno', 'Thunderbolt', 'The Grim Reaper', 'Into The Empty', 'Hatred', 'Valleys']
+const songs = ['Carry on', 'Freak']
 
-//create var to keep tracl of songs
+//create var to keep track of songs
 let songIndex = 0
+
+
+
+
 
 //initially load song into DOM
 // this determins the song that is played
 loadSong(songs[songIndex])
 
+
+
 //create function to update song detials
 function loadSong(song) {
   title.innerText = song
-  audio.src = `songs/${song}.mp3`
-
+  audio.src = `/songs/${song}.mp3`
 }
+
 
 //the functions that store the logic to execute commands for
 //music player buttons
@@ -41,6 +44,11 @@ function playSong() {
   playBtn.querySelector('i.fas').classList.add('fa-pause')
   audio.play()
 }
+
+
+
+
+
 //logic for pkaying songs functionalitys
 function pauseSong() {
   musicContainer.classList.remove('play')
@@ -48,6 +56,10 @@ function pauseSong() {
   playBtn.querySelector('i.fas').classList.add('fa-play')
   audio.pause()
 }
+
+
+
+
 //logic for prev song functionality
 function prevSong() {
   songIndex --
@@ -56,8 +68,12 @@ function prevSong() {
   }
   loadSong(songs[songIndex])
   playSong()
-
 }
+
+
+
+
+
 //logic for next song functionality
 function nextSong() {
   songIndex ++
@@ -68,12 +84,15 @@ function nextSong() {
   playSong()
 }
 
+
 //logic for dynamic song progress bar
 function songProgress(e) {
   const {duration,currentTime} = e.srcElement
   const progressPercent = (currentTime/duration) * 100;
   progress.style.width = `${progressPercent}%`
 }
+
+
 
 
 //logic for allowing user to skip to certain parts of song
@@ -84,6 +103,7 @@ function jumpDuration(e) {
   audio.currentTime = (clickX / width) * duration
 
 }
+
 
 
 //event listeners commands for our buttons on music player

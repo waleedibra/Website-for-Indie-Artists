@@ -5,23 +5,85 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
-
   <link rel="stylesheet" href="css/8daudio.css">
-
-  <title>Fan Mail</title>
+  <title>8D Audio</title>
 </head>
 
 <body>
+
+
+  <!-- from the ash album art background -->
   <div class="background-image">
     <%- include('partials/banner'); -%>
+    <h1 class="albumtitle">I AM
+      <br>
+      8D AUDIO
+    </h1>
+    <div class="music-player">
+      <div class="Music-container">
+        <div class="Music-info">
+          <h4 id="title">unravel</h4>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div>
 
 
+        <audio src="songs/Unravel.mp3" id="audio"></audio>
 
-  <h1>Coming Soon</h1>
+        <div class="img-container">
+          <img src="/images/iam.png" alt="Music cover" id="cover">
+        </div>
 
+        <div class="navigation ">
+          <button  id="prev" class="action-btn" type="button" name="button">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button  id="play" class="action-btn" type="button" name="button">
+            <i class="fas fa-play"></i>
+          </button>
+          <button  id="next" class="action-btn" type="button" name="button">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="download" onclick="window.location.href='#emailsect'" type="submit" name="button">Download</button>
+
+  </div>
+
+  <!-- email sign up form -->
+  <div class="email-signup" id="emailsect">
+    <div class="email-sect">
+
+
+      <form class="" action="/music" method="POST">
+        <h1 class="emailtitle">Become a Survivor</h1>
+        <br>
+        <h3 class="salepitch">Join the Survivors email list to download the full album,and get
+          <br>
+          early updates on new music,exclusive snippets of unreleased material
+          <br>
+          and more
+        </h3>
+
+        <h4 class="thank"></h4>
+
+
+        <input type="text" name="fname" value="" class="form-control" placeholder="Please enter your first name">
+        <br>
+        <input type="text" name="lname" value="" class="form-control" placeholder="Please enter your last name">
+        <br>
+        <input name='email' type="email" id="inputEmail" class="form-control" placeholder="Email address" <br>
+        <button onclick="refreshDiv();" class="submitbtn" type="submit" name="button">submit</button>
+      </form>
+
+    </div>
   </div>
 
 
 </body>
+<script src="/js/musicpage.js">
+</script>
 
 </html>

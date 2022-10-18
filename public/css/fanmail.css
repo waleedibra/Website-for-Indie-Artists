@@ -1,11 +1,11 @@
 @font-face {
   font-family: mainfont;
-  src: url('/fonts/Revamped-X3q1a.ttf');
+  src: url('public/fonts/Revamped-X3q1a.ttf');
 }
 
 @font-face {
   font-family: secfont;
-  src: url('/fonts/Brave81.ttf');
+  src: url('public/fonts/Brave81.ttf');
 }
 
 body {
